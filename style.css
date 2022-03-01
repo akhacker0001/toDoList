@@ -1,0 +1,129 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    color: #05152c;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+.heading span{
+    color: #ff5913;
+}
+
+.input-container{
+    height: 80px;
+
+}
+
+.input-container .input-box{
+    cursor: pointer;
+    
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    width: 430px;
+    height: 50px;
+    justify-content: space-between;
+}
+.input-container .input-box .input{
+    border-bottom: 3px solid #ff5913;
+    height: 100%;
+    width: 78%;
+    
+}
+.input-container .input-box .input input{
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+.input-container .input-box .btn{
+    height: 100%;
+    width: 22%;
+    
+}
+.input-container .input-box .btn button{
+    background-color: #05152c;
+    transition: all 0.3s ease;
+
+    height: 100%;
+    width: 100%;
+    font-size: 22px;
+    color: white;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.list-main-container{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.list-main-container .list-container{
+    align-content: flex-start;
+    width: 500px;
+    height: auto;
+
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.list-main-container .list-container .items{
+    margin: 5px;  
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    width: 100%;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+.list-container .items .sr-no{
+    height: 100%;
+    transition: all 0.3s ease;
+    width: 10%;
+    font-size: 33px;
+    background-color: #ff5913;
+    color: white;
+    cursor: pointer;
+}
+.list-container .items .content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 80%;
+    font-size: 20px;
+    overflow: hidden;
+}
+.list-container .items .close-btn{
+    height: 100%;
+    width: 10%;
+    font-size: 30px;
+    color: white;
+    background-color: #05152c;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.list-container .items .close-btn:hover ,
+.input-container .input-box .btn button:hover,
+.list-container .items .sr-no:hover{
+    transform: scale(1.1);
+}
+.list-main-container .list-container .items:hover,
+.input-container .input-box:hover{    
+    transform: scale(1.1);
+}
+
